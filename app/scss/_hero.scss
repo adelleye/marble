@@ -1,0 +1,48 @@
+@import "_variables.scss";
+@import "_animations.scss";
+
+.hero {
+  &__text {
+    text-align: center;
+
+    h6 {
+      color: rgb(93, 230, 222);
+      margin-top: 5.25rem; //84px
+      text-transform: uppercase;
+      font-size: $font-sm;
+      font-weight: 500;
+      margin-bottom: 1.3rem;
+    }
+    h1 {
+      font-family: "Canela Deck", Arial, Helvetica, sans-serif;
+      font-size: $font-xlg;
+      margin-bottom: 1.5rem;
+      word-wrap: break-word;
+      @include breakpoint-down(small) {
+        font-size: 40px;
+      }
+    }
+    p {
+      font-size: $font-md;
+      margin-bottom: 2.25rem;
+    }
+    a {
+      display: inline-block;
+      background-color: $white;
+      color: black;
+    }
+  }
+  &__image {
+    background-image: url("/images/heroImage.svg");
+    //background image style rules
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    //background style rules end
+    margin-top: 3rem;
+    min-height: 614px;
+    @include breakpoint-down(small) {
+      min-height: 15rem;
+    }
+  }
+}

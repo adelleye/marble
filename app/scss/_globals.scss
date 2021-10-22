@@ -1,0 +1,87 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  // font: 100% $font-stack;
+  margin: 0px;
+  padding: 0px;
+  font-family: graphik, Helvetica;
+  font-size: $font-xsm;
+  color: $white;
+  background-color: $placeholderpurple;
+}
+
+h1,
+h2,
+h3,
+h6,
+p {
+  margin-top: 0px;
+}
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+//Spacing
+.container {
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
+}
+//flexbox
+.flex {
+  display: flex;
+  //flex related classes
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-jc-r {
+    justify-content: right;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+//Buttons
+button,
+.button {
+  padding: 0.75rem 1.875rem;
+  background-color: $lightblue;
+  border: 0;
+  border-radius: 3px;
+
+  cursor: pointer;
+  font-weight: 600;
+}
+
+//Visibility classes
+.hide-for-mobile {
+  //hide for mobile and tablet devices
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  //hide for desktop viewport widths
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}

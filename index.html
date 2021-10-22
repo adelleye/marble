@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Marble</title>
+    <link rel="stylesheet" href="dist/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!--<div class="overlay has-fade"></div> -->
+      <!-- flex is a helper class-->
+      <nav class="container flex flex-ai-c flex-jc-sb">
+        <a href="/" class="header__logo">
+          <img src="images/logo-text.svg" alt="Marble" />
+        </a>
+
+        <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+          <!-- <span> by defualt has a display:inline-->
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div class="header__links hide-for-mobile">
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Support</a>
+          <a href="#">Log In</a>
+          <a
+            href="#"
+            id="call-to-action"
+            class="button hide-for-mobile flex-jc-r"
+            >Sign Up</a
+          >
+        </div>
+      </nav>
+      <div class="header__menu has-fade hide-for-desktop">
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Support</a>
+        <a href="#">Log In</a>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero__text container">
+        <h6>New & improved</h6>
+        <h1>Optimize your team's <br />productivity and efficiency</h1>
+        <p>
+          Make remote work even better than it was before <br />
+          we even had to do it
+        </p>
+        <a href="#" class="button hero_cta">Get started – it's free</a>
+      </div>
+      <div class="hero__image"></div>
+    </section>
+    <script src="app/javascript/script.js"></script>
+  </body>
+</html>

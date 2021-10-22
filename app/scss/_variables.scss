@@ -1,0 +1,31 @@
+//Colors
+$lightblue: rgba(
+  $color: #4cc9f0,
+  $alpha: 1,
+);
+$hoverlightblue: rgba(
+  $color: #4cc9f0,
+  $alpha: 0.9,
+);
+
+$inactivewhite: rgba(
+  $color: #f6f0ff,
+  $alpha: 0.8,
+);
+
+$white: rgba(
+  $color: #f6f0ff,
+  $alpha: 1,
+);
+
+$placeholderpurple: rgba(
+  $color: #070112,
+  $alpha: 1,
+);
+
+//font sizes (60, 21, 18, 16, 14)px in rem divide by 16
+$font-xsm: 0.875rem; //14px
+$font-sm: 1rem; //16px
+$font-md: 1.125rem; //18px
+$font-lg: 1.3125rem; //21px
+$font-xlg: 3.75rem; //60px
